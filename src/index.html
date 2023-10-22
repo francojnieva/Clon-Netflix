@@ -4,14 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Clon de la página de inicio y de iniciar sesión de Netflix">
+    <link rel="shortcut icon" href="./assets/netflix_favicon.svg" type="image/x-icon">
     <meta name="author" content="Franco Javier Nieva">
     <!-- TAILWIND CSS -->
     <link rel="stylesheet" href="./output.css">
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./css/mystyle.css">
     <!-- TITLE -->
-    <title>Clon Netflix</title>
+    <title>Netflix Argentina: Ve series online, ve películas online</title>
 </head>
 <body>
-    
-    
+    <main>
+        <section class="first-section bg-cover border-b-8 border-[#232323] lg:h-screen">
+            <div class="flex justify-between py-4 lg:pb-16 xl:px-28 mb-24">
+                <img class="w-28 ms-3 lg:w-48" src="./assets/netflix_logo_icon.svg" alt="logo de Netflix" title="Netflix">
+                <div class="flex items-center">
+                    <div class="flex me-2">
+                        <select id="" class="rounded outline-none p-1 bg-transparent text-white border-2 border-[#525252]">
+                            <option value="Spanish">Español</option>
+                            <option value="English">English</option>
+                        </select>
+                    </div>
+                    <a href="#" class="bg-[#E50914] text-white py-1 px-4 rounded me-5 font-semibold">Iniciar sesión</a>
+                </div>
+            </div>
+            <div class="text-center text-white mt-5 py-3 md:mt-16 pb-12">
+                <h1 class="text-4xl font-bold mb-5 lg:text-5xl">Películas y series ilimitadas y mucho más</h1>
+                <p class="text-xl mt-3 mb-5 lg:text-2xl">Disfruta donde quieras. Cancela cuando quieras.</p>
+                <p class="text-xl px-7 lg:text-2xl">¿Quíeres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
+               <form action="#" class="flex flex-col items-center mt-5 pb-4 md:flex-row justify-center">
+                    <input type="email" id="" class="w-72 mb-4 p-3 outline-none font-semibold bg-[#0c0c0ccb] rounded border-2 border-[#353535] md:mb-0 me-2" placeholder="Email">
+                    <button type="submit" class="bg-[#E50914] text-white rounded font-semibold py-2.5 px-4 text-xl">Comenzar ></button>
+               </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
