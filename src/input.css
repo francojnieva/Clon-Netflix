@@ -5,7 +5,7 @@
 
 @layer components {
     .section2-4 {
-        @apply bg-black text-white py-10 px-5 border-b-8 border-[#232323] flex flex-col items-center justify-center lg:px-16 lg:flex-row xl:px-24;
+        @apply bg-black text-white py-10 px-5 border-b-8 border-[#232323] flex flex-col items-center justify-center lg:px-16 lg:flex-row xl:px-40 xl:py-28;
     }
 
     .section2-4 h2 {
