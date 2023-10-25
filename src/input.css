@@ -15,4 +15,20 @@
     .section2-4 p {
         @apply text-center text-xl lg:text-start lg:text-2xl
     }
+
+    .btn-accordion {
+        @apply bg-[#303030] flex items-center justify-between p-4 w-[100%] md:w-[90%] xl:w-[75%] xl:p-6 transition duration-300 ease-in-out hover:bg-[#474747]    
+    }
+
+    .btn-accordion span {
+        @apply xl:text-2xl
+    }
+
+    .answer-accordion {
+        @apply bg-[#303030] mt-[.1rem] mb-2 md:w-[90%] xl:text-3xl xl:w-[75%] px-6
+    }
+
+    .answer-accordion p {
+        @apply  xl:text-2xl
+    }
 }
