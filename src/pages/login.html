@@ -15,50 +15,52 @@
 <body>
     <section class="section-main-login">
         <main>
-            <img src="../assets/netflix_logo_icon.svg" class="w-28 pt-3 ms-3 md:w-48 md:mb-7" alt="logo de Netflix">
+            <a href="../index.html"><img src="../assets/netflix_logo_icon.svg" class="w-28 pt-3 ms-3 md:w-48 md:mb-7 lg:w-52" alt="logo de Netflix"></a>
             <div class="flex flex-col items-center">
-                <form class="flex flex-col lg:bg-[#050303cb] rounded text-gray-500 pb-16 w-[95%] lg:max-w-sm p-7">
+                <form id="form-login" class="flex flex-col lg:bg-[#050303cb] rounded text-gray-500 pb-16 w-[95%] lg:max-w-[28rem] p-7">
                     <h1 class="text-white text-3xl font-medium py-5">Inicia sesión</h1>
                     <div>
-                        <input type="email" placeholder="Email o número de teléfono" name="email" required="required" class="w-[100%] bg-[#333333] p-3 text-white mb-4 rounded outline-none" autocomplete="off">
-                        <input type="password" placeholder="Contraseña" name="password" required="required" class="w-[100%] bg-[#333333] p-3 text-white mb-10 rounded outline-none" autocomplete="off">
+                        <input type="email" placeholder="Email o número de teléfono" name="email" id="email" class="w-[100%] bg-[#333333] p-3 text-white mb-1 rounded outline-none" autocomplete="off">
+                        <p id="warning-email" class="mb-4 text-orange-400 text-[.8rem]"></p>
+                        <input type="password" placeholder="Contraseña" name="password" id="password" class="w-[100%] bg-[#333333] p-3 text-white mb-1 rounded outline-none" autocomplete="off">
+                        <p id="warning-password" class="mb-4 text-orange-400 text-[.8rem]"></p>
                     </div>
-                    <div class="flex justify-center mb-2">
-                        <button type="submit" class="bg-[#E50914] text-white rounded font-semibold py-3 transition duration-300 ease-in-out hover:bg-opacity-80 w-[100%]">Iniciar sesión</button>
+                    <div class="flex justify-center mb-2 mt-8">
+                        <button type="submit" id="btnLogin" class="bg-[#E50914] text-white rounded font-semibold py-3 w-[100%]">Iniciar sesión</button>
                     </div>
                     <div class="flex justify-between mb-3">
                         <div>
                             <input type="checkbox" checked class="bg-gray-600" id="rememberCheck">
                             <label for="rememberCheck">Recuérdame</label>
                         </div>
-                        <a>¿Necesitas ayuda?</a>
+                        <a class="hover:underline">¿Necesitas ayuda?</a>
                     </div>
-                    <span class="mb-2">¿Primera vez en Netflix? <a href="#" class="text-white">Suscríbete ahora.</a></span>
-                    <span class="text-[.8rem]">Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot. <a href="#" class="text-blue-600">Más info.</a></span>
+                    <span class="mt-8 mb-2">¿Primera vez en Netflix? <a href="#" class="text-white hover:underline">Suscríbete ahora.</a></span>
+                    <span class="text-[.8rem]">Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot. <a href="#" class="text-blue-600 hover:underline">Más info.</a></span>
                 </form>
             </div>
         </main>
         <footer class="lg:bg-[#050303cb] border-t border-[#4e4e4e] lg:border-none mt-20 text-[.8rem] text-[#616161] px-5 py-6 md:px-10 xl:px-44">
-            <span>¿Preguntas? Llama al <a href="tel:0800 345 1593">0800 345 1593</a></span>
+            <span class="text-[1rem]">¿Preguntas? Llama al <a href="tel:0800 345 1593" class="hover:underline">0800 345 1593</a></span>
             <div class="py-6 grid grid-cols-2 lg:grid-cols-4">
                 <div class="lg:me-5">
-                    <li class="list-none mb-3 "><a href="#">Preguntas frecuentes</a></li>
-                    <li class="list-none mb-3 "><a href="#">Preferencia de cookies</a></li>
+                    <li class="list-none mb-3 "><a href="#" class="hover:underline">Preguntas frecuentes</a></li>
+                    <li class="list-none mb-3 "><a href="#" class="hover:underline">Preferencia de cookies</a></li>
                 </div>
                 <div class="ms-4">
-                    <li class="list-none mb-3"><a href="#">Centro de ayuda</a></li>
-                    <li class="list-none mb-3"><a href="#">Información corporativa</a></li>
+                    <li class="list-none mb-3"><a href="#" class="hover:underline">Centro de ayuda</a></li>
+                    <li class="list-none mb-3"><a href="#" class="hover:underline">Información corporativa</a></li>
                 </div>
                 <div class="lg:me-5">
-                   <li class="list-none mb-3"><a href="#">Términos de uso</a></li>
+                   <li class="list-none mb-3"><a href="#" class="hover:underline">Términos de uso</a></li>
                 </div>
                 <div class="ms-4">
-                    <li class="list-none mb-3"><a href="#">Privacidad</a></li>
+                    <li class="list-none mb-3"><a href="#" class="hover:underline">Privacidad</a></li>
                 </div>
             </div>
-            <div class="mb-3 w-[45%] md:w-[25%] lg:w-[20%] xl:w-[15%]">
-                <div class="flex me-2 rounded md:relative ps-2 md:ps-8 border-2 border-[#7c7c7c] bg-black">
-                    <img src="./assets/translate_icon.svg" class="w-[1rem] md:absolute top-2 left-3" alt="">
+            <div class="mb-3">
+                <div class="flex me-2 rounded max-w-[7rem] md:relative ps-2 md:ps-8 border-2 border-[#7c7c7c] bg-black">
+                    <img src="../assets/translate_icon.svg" class="w-[1rem] md:absolute top-2 left-3" alt="">
                     <select id="" class="outline-none bg-black p-1 text-[#616161]">
                         <option value="Spanish">Español</option>
                         <option value="English">English</option>
@@ -68,6 +70,6 @@
         </footer>
 </section>
    
-    
+    <script src="../js/app.js"></script>
 </body>
 </html>
